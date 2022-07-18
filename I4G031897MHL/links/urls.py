@@ -1,6 +1,7 @@
 from django.urls import path
 #from . import views
-from .views import PostListApi, PostCreateApi, PostDetailApi, PostUpdateApi, PostDeleteApi 
+from .views import PostListApi, PostCreateApi, PostUpdateApi, PostDeleteApi 
+from .views import ActiveLinkView, RecentLinkView
 
 app_name="link"
 

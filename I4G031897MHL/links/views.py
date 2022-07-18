@@ -60,3 +60,4 @@ class RecentLinkView(APIView):
         qs = models.Link.public.filter(created_date__gte=seven_days_ago)
         data = serializers.LinkSerializer(qs, many=True).data
         return Response(data, status=status.HTTP_200_OK)
+    
